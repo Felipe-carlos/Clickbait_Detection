@@ -1,0 +1,53 @@
+{
+  "best_metric": 0.15491686761379242,
+  "best_model_checkpoint": "/content/drive/MyDrive/Mestrado/ML/topicos_avanc\u0327ados/finetuned_model/distilbert-base-uncased-lora-clikbait/checkpoint-2124",
+  "epoch": 2.0,
+  "eval_steps": 500,
+  "global_step": 2124,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "learning_rate": 9e-05,
+      "loss": 0.2856,
+      "step": 1062
+    },
+    {
+      "epoch": 1.0,
+      "eval_accuracy": {
+        "accuracy": 0.9452033286230177
+      },
+      "eval_loss": 0.16403475403785706,
+      "eval_runtime": 9.5028,
+      "eval_samples_per_second": 670.224,
+      "eval_steps_per_second": 27.992,
+      "step": 1062
+    },
+    {
+      "epoch": 2.0,
+      "learning_rate": 8e-05,
+      "loss": 0.1619,
+      "step": 2124
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": {
+        "accuracy": 0.9505416862929816
+      },
+      "eval_loss": 0.15491686761379242,
+      "eval_runtime": 9.6724,
+      "eval_samples_per_second": 658.47,
+      "eval_steps_per_second": 27.501,
+      "step": 2124
+    }
+  ],
+  "logging_steps": 500,
+  "max_steps": 10620,
+  "num_train_epochs": 10,
+  "save_steps": 500,
+  "total_flos": 572444549999064.0,
+  "trial_name": null,
+  "trial_params": null
+}
