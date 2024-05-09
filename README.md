@@ -3,7 +3,7 @@
 
 ## Intro:
 
-My goal with this project is to explore various approaches to detect clickbait content on the internet and learn more about transformers in the process. Clickbait, known for its sensationalized headlines or misleading content, poses challenges for internet users seeking accurate information. I've implemented custom models and utilized pre-trained Transformer architectures to develop clickbait detection solutions. 
+My goal with this project is to explore various approaches to detect clickbait content on the internet and learn more about transformers in the process. Clickbait, known for its sensationalized headlines or misleading content, poses challenges for internet users seeking accurate information. 
 
 ## DATA
 In this project, I'm using the [Clickbait dataset](https://www.kaggle.com/datasets/amananandrai/clickbait-dataset) found on Kaggle.
