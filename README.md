@@ -42,6 +42,11 @@ I tested the following configurations:
 
 The attention mecanism can be seen in the following photo:
 
+<p align="center">
+  <img src=https://github.com/Felipe-carlos/Clickbait_Detection/blob/main/from0/att-sc.pngalt = "Attention Mecanism">
+</p>
+N
+
 ![Attention Mecanism](https://github.com/Felipe-carlos/Clickbait_Detection/blob/main/from0/att-sc.png)
 
 In the graph above one can notice that "What" used in the beging of sentece has a great impact on the classification of this sentence as clickbait.
