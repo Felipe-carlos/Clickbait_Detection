@@ -24,7 +24,7 @@ I used LoRa for fine tuning with the parameters r equals to 5 and 25.
 
 # Model created from scratch:
 
-The following arkitecture was build using only PyTorch, thanks to this [great repository](https://github.com/hkproj/pytorch-transformer) created by [Hkproj](https://github.com/hkproj) 
+The following arkitecture was build using only PyTorch, the code was adapted from this [great repository](https://github.com/hkproj/pytorch-transformer) created by [Hkproj](https://github.com/hkproj) 
 
 
 ![Transformer encoder](https://github.com/Felipe-carlos/Clickbait_Detection/blob/main/from0/transformer.png)
@@ -53,8 +53,13 @@ In the graph above one can notice that "What" used in the beging of sentece has 
 
 # Results:
 
+Observing Figure below and, it is noted that the two configurations have similar results. However, the smaller model, with r=5, outperforms the version with 1.3 million trained parameters, indicating that the addition of weights for fine-tuning does not necessarily translate into a superior result.
+
 ![Losses through training](https://github.com/Felipe-carlos/Clickbait_Detection/blob/6cffba37c29fbfdbd0ae05c83962da6e3cb10a4f/from0/results/perdas_ep_finetuned.png)
+In Figure below, a comparison of the cost function evolution throughout the training epochs of all evaluated models is conducted. It is observed that models pre-trained specifically for this task exhibited superior performance compared to models with parameter adjustments, which can be largely justified by the overfitting observed in the previous result.
 
 ![Losses in the validation dataset](https://github.com/Felipe-carlos/Clickbait_Detection/blob/6cffba37c29fbfdbd0ae05c83962da6e3cb10a4f/from0/results/los_final.png)
+
+When analyzing accuracy on the validation data, the difference in final performance between the models does not seem to be significant. All tested models achieved an accuracy rate exceeding 96% on unseen data, which, in general, can be considered a positive result considering that these models required only about 30 minutes of training using a 16 GB GPU.
 
 ![Accuracy in the validation dataset](https://github.com/Felipe-carlos/Clickbait_Detection/blob/6cffba37c29fbfdbd0ae05c83962da6e3cb10a4f/from0/results/acc_final.png)
